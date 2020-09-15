@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.auth__page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 20px;
+    background: #ffffff;
+    display: flex;
+}
+
+.auth__page .auth__container {
+    padding: 60px;
+    margin: auto;
+    width: 100%;
+    max-width: 520px;
+    max-height: 700px;
+    background: #fff;
+    box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.4);
+}
+
+.auth__page .auth__container label {
+    color: #353b48;
+    display: block;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.auth__title {
+    font-size: 30px;
+    text-align: center;
+    color: #4cd137;
+    margin-bottom: 50px;
+}
+
+.auth__form-control {
+    margin: 15px 0;
+}
+
+.auth__page .auth__container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-bottom: 3px solid rgb(206, 206, 206);
+    background: transparent;
+    color: #495057;
+    letter-spacing: 1px;
+    transition: 0.3 ease-in-out;
+}
+
+.auth__page .auth__container input:focus {
+    background-color: #fff;
+    border-bottom-color: #44bd32;
+}
+
+.auth__page .auth__container .btnContainer {
+    width: 100%;
+    padding: 24px 0;
+}
+
+.auth__page .auth__container .btnContainer p {
+    margin: 14px 0 0 0;
+    text-align: right;
+    color: #495057;
+}
+
+.auth__page .auth__container .btnContainer p a {
+    color: #4cd137;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+.auth__page .auth__container .btnContainer p a:hover {
+    color: #c23616;
+}
+
+.auth__page .auth__container .errorMsg {
+    color: #c23616;
+    font-size: 16px;
+}
+
+@media(max-width: 500px) {
+    .auth__page {
+        padding: 0;
+    }
+    .auth__container {
+        padding: 20px !important;
+        margin: 0 !important;
+    }
+    .auth__page .auth__container label {
+        margin: 7px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 1380px) {
+    .auth__page .auth__container {
+        padding: 40px;
+        max-width: 450px;
+        max-height: 580px;
+    }
+    .auth__title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .auth__form-control {
+        margin: 5px 0;
+    }
+    .auth__page .auth__container label {
+        font-size: 14px;
+    }
+}

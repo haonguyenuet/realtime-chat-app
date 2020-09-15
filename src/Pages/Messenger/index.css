@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Sacramento&family=Josefin+Sans&display=swap');
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messenger__main {
+    display: flex;
+    max-width: 990px;
+    padding: 20px;
+    width: 100%;
+    height: 90vh;
+    background-color: #fff;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.4);
+}
+
+.avatar {
+    width: 50px !important;
+    height: 50px !important;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Sidebar */
+
+.sidebar {
+    max-width: 340px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    border-right: 1px solid #d2dae2;
+}

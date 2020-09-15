@@ -1,0 +1,12 @@
+.sidebar__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.sidebar__headerLeft, .sidebar__headerRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

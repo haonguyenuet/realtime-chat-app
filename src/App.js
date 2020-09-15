@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { isLoggedIn } from "actions/auth.action";
+import Loading from "components/Loading";
+import Authentication from "Pages/Authentication/index";
+import Messenger from "Pages/Messenger/index";
+import "./App.css";
 
 function App() {
+  const { authenticating, authenticated } = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (!authenticated) {
+      dispatch(isLoggedIn());
+    }
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {authenticating ? (
+        <Loading />
+      ) : authenticated ? (
+        <Messenger />
+      ) : (
+        <Authentication />
+      )}
     </div>
   );
 }

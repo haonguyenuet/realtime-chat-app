@@ -1,0 +1,11 @@
+.chatting-area__display {
+    overflow: hidden;
+    overflow-y: auto;
+    width: 100%;
+    padding: 10px 0;
+    flex-grow: 1 !important;
+}
+
+.chatting-area__not-mesage span {
+    color: #a5b1c2
+}

@@ -1,0 +1,17 @@
+.circle-button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #353b48;
+    background-color: #f5f6fa;
+    margin-right: 10px;
+    box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 1px 1px 3px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.circle-button:hover {
+    background: linear-gradient(45deg, #0be881 30%, #00dfc0 90%);
+}

@@ -1,0 +1,22 @@
+.chatting-area__header {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #f5f6fa;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.2)
+}
+
+.chatting-area__info {
+    text-align: start;
+}
+
+.chatting-area__info>h3 {
+    color: #4b4b4b
+}
+
+.chatting-area__info>p {
+    color: #8395a7;
+}

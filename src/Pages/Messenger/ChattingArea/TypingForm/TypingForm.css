@@ -1,0 +1,23 @@
+.typing__form {
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.1)
+}
+
+.form__control {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.form__input {
+    flex: 1 !important;
+}
+
+.form__btn {
+    background: transparent !important;
+    flex: 0 !important;
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&display=swap');
+.chatting-area__wrapper {
+    flex-grow: 1;
+    position: relative;
+    text-align: center;
+    font-family: 'Poppins', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #f5f6fa;
+}
+
+@media(max-width: 500px) {
+    .logoutBtn {
+        width: 100px;
+        padding: 10px;
+        font-size: 14px;
+        opacity: 0.8;
+        z-index: 1;
+    }
+    .message__content {
+        padding: 5px 20px !important;
+    }
+}
